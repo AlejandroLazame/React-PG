@@ -1,0 +1,21 @@
+input NewPlayer {
+    name: String!
+    nickName: String!
+    password: String!
+}
+
+type Player {
+    name: String!
+    nickName: String!
+    characters: [Character]
+}
+
+type Query {
+    me: Player!
+}
+
+type Mutation {
+    addNewPlayer(
+        input: NewPlayer!
+    ):Player!
+}

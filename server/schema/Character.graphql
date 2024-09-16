@@ -1,0 +1,26 @@
+input NewCharacter {
+    name: String!
+    race: NewRace!
+    class: NewClass!
+    history: String
+}
+
+type Character {
+    name: String!
+    race: Race!
+    class: Class!
+    actualStatus: Status!
+    statusPoints: Int
+    createdBy: Player!
+    history: String
+}
+
+type Query {
+    characters: [Character]!
+}
+
+type Mutation {
+    addNewCharacter(
+        input: NewCharacter!
+    ):Character!
+}

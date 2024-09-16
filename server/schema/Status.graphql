@@ -1,0 +1,66 @@
+input SetStatus {
+    #Atributos Fisicos
+    strength: Int!
+    agility: Int!
+    vitality: Int!
+    constituition: Int!
+    #Atributos Mentais e Psicologicos
+    intelligence: Int!
+    wisdom: Int!
+    charisma: Int!
+    #Atributos de Combate
+    attack: Int!
+    defense: Int!
+    accuracy: Int!
+    evasion: Int!
+    #Atributos de combate Magico
+    mana: Int!
+    magicPower: Int!
+    magicResistence: Int!
+    #Atributos de Condicao
+    health: Int!
+    fatigue: Int!
+    morale: Int!
+    luck: Int!
+    #Atributos Temporarios
+    poisoned: Boolean!
+    bleeding: Boolean!
+    paralyzed: Boolean!
+    blessed: Boolean!
+    protection: Boolean!
+}
+
+type Status {
+    #Atributos Fisicos
+    strength: Int!
+    agility: Int!
+    vitality: Int!
+    constituition: Int!
+    #Atributos Mentais e Psicologicos
+    intelligence: Int!
+    wisdom: Int!
+    charisma: Int!
+    #Atributos de Combate
+    attack: Int!
+    defense: Int!
+    accuracy: Int!
+    evasion: Int!
+    #Atributos de combate Magico
+    mana: Int!
+    magicPower: Int!
+    magicResistence: Int!
+    #Atributos de Condicao
+    health: Int!
+    fatigue: Int!
+    morale: Int!
+    luck: Int!
+    #Atributos Temporarios
+    poisoned: Boolean!
+    bleeding: Boolean!
+    paralyzed: Boolean!
+    blessed: Boolean!
+    protection: Boolean!
+    #Referencia de Volta para Character e Class
+    character: Character
+    class: Class
+}

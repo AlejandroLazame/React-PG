@@ -1,0 +1,21 @@
+input NewClass {
+    name: String!
+    requiredRace: NewRace
+    initialStatus: SetStatus!
+}
+
+type Class {
+    name: String!
+    requiredRace: Race
+    initialStatus: Status!
+}
+
+type Query {
+    classes: [Class!]!
+}
+
+type Mutation {
+    addNewClass(
+        input: NewClass!
+    ):Class!
+}
